@@ -1,0 +1,232 @@
+/*   ************variables*********** */
+:root{
+    --obcmaroon:#83003f;
+    --obcblue:#20419a;
+    --obcyellow:#FFDD01;
+    --obcsilver:#D9D9D9;
+}
+*{
+    box-sizing: border;
+}
+
+
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Merriweather Sans';
+    src: url(fonts/Merriweather_Sans/MerriweatherSans-VariableFont_wght.ttf);
+}
+
+/* *******RESET********** */
+body, p, ul, li{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: Inter;
+}
+body{
+     background-color: var(--obcsilver);
+}
+li{
+    list-style-type: none;
+}
+
+
+/* **********BASE STYLES********** */
+h1{
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 2.2em;
+}
+h2{
+    font-size: 1.5em;
+}
+section{
+    margin: 0px 20px;
+    overflow: hidden;
+    
+}
+p{
+    margin-bottom:10px;
+    line-height: 1.2em;
+}
+/* ***************Header and Nav*********** */
+header{
+background: #20419A;
+background: linear-gradient(0deg,rgba(32, 65, 154, 1) 12%, rgba(52, 82, 161, 1) 40%, rgba(139, 153, 191, 1) 61%, rgba(217, 217, 217, 1) 77%, rgba(255, 255, 255, 1) 96%);
+
+padding-bottom: 20px;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+   
+}
+nav ul {
+    display: flex;
+    color:#FFDD01;
+    font-weight: 600;
+}
+
+nav ul li{
+    margin-right: 10px;
+}
+#signup{
+    background-color: #FFDD01;
+    color: #20419a;
+    font-weight: 600;
+    padding:10px;
+    border-radius: 10px;
+    margin-left: 40px;
+}
+
+/* 
+*****hero section and What is is section **** */
+#hero{
+    position: relative;
+    margin: 0;
+}
+#hero h1{
+    color:var(--obcsilver);
+    position: absolute;
+    width: 50%;
+    margin-left: 25px;
+    line-height: 1.15em;
+}
+
+/* *****What it is and what to expect SECTIONs*** */
+.yellow{
+    background-color: var(--obcyellow);
+    width:90%;
+    margin: auto;
+    padding: 15px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.343);
+    border: 1px solid black;
+}
+
+#boxcontainer div{
+    width:250px;
+    border:2px solid var(--obcblue);
+    margin: auto;
+    padding:10px 15px;
+    height: 200px;
+    margin:20px auto;
+    box-shadow: 0px 2px rgba(0, 0, 0, 0.349);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#expect{
+    margin-top: 30px;
+    
+}
+#imgunder{
+    position: relative;
+    z-index: -1;
+    top:-40px;
+
+}
+
+/* ******Section "after" and Below****** */
+#after{
+    background-color: white;
+    margin: -25px 0px 0px 0px;
+    padding: 10px 20px;;
+   
+}
+#after img{
+  width: 100%;
+}
+#grey{
+    background-color: var(--obcsilver);
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top:-50px;
+    padding: 15px;
+    border:1px solid black;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+    z-index: 2;
+}
+#grey ol li{
+     list-style-type:decimal;
+     margin:10px;
+}
+
+.fa-solid, fa-square-check{
+    color:rgb(6, 148, 6);
+}
+#contact{
+    position: relative;
+    margin:0;
+    bottom: 700px;
+    
+    
+    
+}
+#contact div{
+background: #20419A;
+background: linear-gradient(0deg,rgba(32, 65, 154, 1) 22%, rgba(52, 82, 161, 1) 40%, rgba(139, 153, 191, 1) 61%, rgba(217, 217, 217, 1) 77%, rgba(255, 255, 255, 1) 96%);
+height: 220px;
+padding-top: 700px;
+
+}
+
+#contact div p{
+    width:80%;
+    margin: auto;
+    color: var(--obcsilver);
+    font-size: 28px;
+    text-align: center;  
+}
+#contact div p:nth-child(1){
+    width: 70%;
+    padding-bottom: 10px;
+}
+#contact div a{
+    color:var(--obcsilver);
+   
+    text-decoration:none;
+    
+}
+
+/* ************FOOTER********* */
+footer {
+background: #20419A;
+background: linear-gradient(180deg,rgba(32, 65, 154, 1) 19%, rgba(52, 82, 161, 1) 41%, rgba(139, 153, 191, 1) 64%, rgba(217, 217, 217, 1) 83%, rgba(255, 255, 255, 1) 96%);
+display: grid;
+grid-template-columns: 1fr 1fr;
+color: var(--obcyellow);
+padding: 10px 20px;
+}
+
+
+#logo{
+grid-column:1/3;
+align-self: center;
+margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#gtest{
+    width:500px;
+    height: 400px;
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 1) 1%, rgba(217, 217, 217, 1) 21%, rgba(32, 65, 154, 1) 32%, rgba(52, 82, 161, 1) 77%,);
+}
